@@ -12,6 +12,15 @@ header, footer {
     padding: 1rem;
 }
 
+header img {
+    max-width: 15%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+}
+
 h1, h2 {
     color: #333;
 }
@@ -22,6 +31,22 @@ p {
 
 main {
     padding: 2rem;
+}
+
+/* Dark Mode Button */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode header, body.dark-mode footer {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .profile-container, body.dark-mode .skillsContent {
+    background-color: #444;
+    color: #fff;
 }
 
 /* Profile Section Styles */
@@ -56,6 +81,9 @@ main {
 }
 
 .profile-picture {
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -75,6 +103,28 @@ button {
 
 button:hover {
     background-color: #04a9b4;
+}
+
+/* Skills List Style Settings */
+.skillsContent {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skillsContent li {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skillsContent li i {
+    color: #007bff;
 }
 
 /* Project Section Styling */
@@ -147,6 +197,14 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover {
     background-color: #218821;
+}
+
+form input:invalid, form textarea:invalid {
+    border-color: red;
+}
+
+form input:valid, form textarea:valid {
+    border-color: green;
 }
 
 input, textarea {

@@ -32,4 +32,13 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         alert('Form submitted!'); //Replace with actuall form handling later
     });
+
+    //dark mode//
+    document.addEventListener('DOMContentLoaded', function() {
+        const darkModeToggle = document.getElementById('darkModeToggle');
+
+        darkModeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    });
 });

@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -17,11 +18,13 @@
                 <li><a href="https://meritpages.com/kgibs">Education</a></li>
             </ul>
         </nav>
+        <img src="images/KindredCoder.png" alt="KindredCoder" id="logo">
+        <button id="darkModeToggle">Toggle Dark Mode</button>
     </header>
     <main>
         <section id="profile">
             <div class="profile-container">
-                <img src="project2.jpg" alt="Kyle Gibson" class="profile-picture">
+                <img src="images/me.jpg" alt="Kyle Gibson" class="profile-picture">
                 <div class="profile-details">
                     <h2>Kyle Gibson</h2>
                     <p>Currently serving as an Active Duty member of the Idaho Army National Guard as a 25B, System Administrator. I work Full-Time for the Recruiting and Retention Battalion's Lead IT Manager.</p>
@@ -33,16 +36,21 @@
             <h2>About Me</h2>
             <p>Currently Attending SNHU to persue a degree in Computer Science with an emphasis on Software Engineering.</p>
             <p>Enjoys spending time with </p>
-            <h3>Skills and Languages I'm currently working on.</h3>
+        </section>
+        <section id="skills">
+            <h2>Skills and Languages I'm currently working on.</h2>
             <button id="toggleSkillsButton">Show Skills</button>
-                <ul id="skillsContent" style="display: none;">
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>HTML & CSS</li>
-                    <li>React</li>
-                    <li>C++</li>
-                    <li>JAVA</li>
+            <div id="skillsContent" style="display: none;">
+                <ul class="skillsContent">
+                    <li><i class="fab fa-js"></i>JavaScript</li>
+                    <li><i class="fab fa-python"></i>Python</li>
+                    <li><i class="fab fa-html5"></i>HTML</li>
+                    <li><i class="fab fa-css3-alt"></i> CSS</li>
+                    <li><i class="fab fa-react"></i>React(Currently Working on)</li>
+                    <li><i class="devicon-cplusplus-plain"></i>C++</li>
+                    <li><i class="fab fa-java"></i>JAVA</li>
                 </ul>  
+            </div>
         </section>
         <section id="projects">
             <h2>Projects</h2>
@@ -50,13 +58,13 @@
             <div id="projectsContent" style="display: none;">
                 <div class="project">
                     <h3>Project 1</h3>
-                    <img src="project1.jpg" alt="Project 1 screenshot">
+                    <img src="images/project1.jpg" alt="Project 1 screenshot">
                     <p>Details about my projects will go here.</p>
                     <a href="https://github.com/KindredCoder/Portfolio" target="_blank">View on GitHub</a>
                 </div>
                 <div class="project">
                     <h3>Project 2</h3>
-                    <img src="project2.jpg" alt="Project 2 screenshot">
+                    <img src="images/KindredCoder_small.png" alt="Project 2 screenshot">
                     <p>A breif description of Project 2.</p>
                     <a href="https://github.com/KindredCoder/Portfolio" target="_blank">View on GitHub</a>
                 </div>

@@ -24,8 +24,6 @@ p {
     line-height: 1.6;
 }
 
-
-
 button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -104,7 +102,7 @@ form button[type="submit"] {
     transition: background-color 0.3s ease;
 }
 
-form buttonp[type="submit"]:hover {
+form button[type="submit"]:hover {
     background-color: #218821;
 }
 
@@ -120,14 +118,6 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #218838;
-}
-
-.profile-picture {
-    width: 150px;
-    height: 250px;
-    border-radius: 20%;
-    margin-bottom: 1rem;
-    justify-content: center;
 }
 
 ul {
@@ -160,7 +150,6 @@ nav ul li a {
     padding: 10px 30px;
     background-color: #007bff;
     border-radius: 5px;
-    transition: ;
 }
 
 nav ul li a:hover {

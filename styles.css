@@ -24,6 +24,8 @@ p {
     line-height: 1.6;
 }
 
+
+
 button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -90,9 +92,10 @@ button[type="submit"]:hover {
 
 .profile-picture {
     width: 150px;
-    height: 150px;
+    height: 250px;
     border-radius: 20%;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 
 ul {

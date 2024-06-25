@@ -12,10 +12,6 @@ header, footer {
     padding: 1rem;
 }
 
-main {
-    padding: 2rem;
-}
-
 h1, h2 {
     color: #333;
 }
@@ -24,6 +20,50 @@ p {
     line-height: 1.6;
 }
 
+main {
+    padding: 2rem;
+}
+
+/* Profile Section Styles */
+#profile {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Profile container to use flexbox */
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Profile details */
+.profile-details {
+    max-width: 600px;
+}
+
+.profile-details h2 {
+    margin: 0;
+    color: #333;
+}
+
+.profile-details p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.profile-picture {
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+}
+
+/* Button Styling for all general buttons */
 button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -36,22 +76,8 @@ button {
 button:hover {
     background-color: #04a9b4;
 }
-.myPicture {
-    border: 1px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    background-color: #fff;
-}
 
-.myPicture img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 1rem;
-    transition: transform 0.3 ease;
-}
-
+/* Project Section Styling */
 .project {
     border: 1px;
     padding: 1rem;
@@ -83,6 +109,8 @@ button:hover {
     text-decoration: underline;
 }
 
+
+/* Contact Form Styling */
 form {
     display: flex;
     flex-direction: column;
@@ -135,6 +163,7 @@ button[type="submit"]:hover {
     background-color: #218838;
 }
 
+/* Navigation Styling */
 ul {
     list-style-type: none;
     padding: 0;
@@ -171,6 +200,11 @@ nav ul li a:hover {
     background-color: #0056b3;
 }
 
+button, nav ul li a {
+    transition: background-color 0.3 ease;
+}
+
+/* Mobile Device Styling & Responsive adjustments */
 @media (max-width: 768px) {
     .project {
         text-align: center;
@@ -180,8 +214,13 @@ nav ul li a:hover {
         flex-direction: column;
         gap: 10px;
     }
-}
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-button, nav ul li a {
-    transition: background-color 0.3 ease;
+    .profile-picture {
+        margin-bottom: 1rem;
+    }
 }

@@ -281,4 +281,10 @@ button, nav ul li a {
     .profile-picture {
         margin-bottom: 1rem;
     }
+    
+    .logo {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
 }

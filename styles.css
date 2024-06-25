@@ -36,6 +36,21 @@ button {
 button:hover {
     background-color: #04a9b4;
 }
+.myPicture {
+    border: 1px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.myPicture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+    transition: transform 0.3 ease;
+}
 
 .project {
     border: 1px;

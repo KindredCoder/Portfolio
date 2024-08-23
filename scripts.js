@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    window.scrollTo(0,0);
     console.log('Document is ready!');
 
     const toggleSkillsButton = document.getElementById('toggleSkillsButton');

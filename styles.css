@@ -83,7 +83,7 @@ main {
 /* Button Styling for all general buttons */
 button {
     padding: 10px 20px;
-    background-color: #44FFD2;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
@@ -91,7 +91,7 @@ button {
 }
 
 button:hover {
-    background-color: #87F6FF;
+    background-color: #3d6aa0;
 }
 
 /* Skills List Style Settings */

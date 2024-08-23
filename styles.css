@@ -82,6 +82,7 @@ body.dark-mode .profile-container, body.dark-mode .skillsContent {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-radius: 8px;
     gap: 2rem;
 }
 
@@ -302,6 +303,14 @@ button, nav ul li a {
 
 /* Mobile Device Styling & Responsive adjustments */
 @media (max-width: 768px) {
+    .about {
+        text-align: center;
+    }
+
+    .skillsContent {
+        text-align: center;
+    }
+
     .project {
         text-align: center;
     }

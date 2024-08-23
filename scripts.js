@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Scroll To the Top Button
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 200) { // Show button after scrolling down 200px
+        if (window.scrollY > 100) { // Show button after scrolling down 100px
             scrollToTop.style.display = 'block';
         } else {
             scrollToTop.style.display = 'none';

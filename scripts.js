@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    window.scrollTo(0,0);
+    window.scrollTo({ top: 0, behavior: 'smooth' }); //used to scroll to top on load or reload
+    
     console.log('Document is ready!');
 
     const toggleSkillsButton = document.getElementById('toggleSkillsButton');

@@ -53,6 +53,21 @@ body.dark-mode .profile-container, body.dark-mode .skillsContent {
     color: #fff;
 }
 
+/* Bottom of Page Section Styles */
+#bottom {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
 /* Profile Section Styles */
 #profile {
     background-color: #fff;
@@ -60,6 +75,7 @@ body.dark-mode .profile-container, body.dark-mode .skillsContent {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
 }
+
 
 /* Profile container to use flexbox */
 .profile-container {
@@ -271,7 +287,7 @@ button, nav ul li a {
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #1e813f;
     color: white;
     border: none;
     border-radius: 5px;
@@ -281,7 +297,7 @@ button, nav ul li a {
 }
 
 #scrollToTop:hover {
-    background-color: #0056b3;
+    background-color: #95d353;
 }
 
 /* Mobile Device Styling & Responsive adjustments */

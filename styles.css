@@ -266,6 +266,24 @@ button, nav ul li a {
     transition: background-color 0.3 ease;
 }
 
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+#scrollToTop:hover {
+    background-color: #0056b3;
+}
+
 /* Mobile Device Styling & Responsive adjustments */
 @media (max-width: 768px) {
     .project {

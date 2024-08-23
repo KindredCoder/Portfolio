@@ -3,6 +3,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('Document is ready!');
 
+
+
+    // Scroll To the Top Button
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 200) { // Show button after scrolling down 200px
+            scrollToTop.style.display = 'block';
+        } else {
+            scrollToTop.style.display = 'none';
+        }
+    });
+
+    const scrollToTop = document.getElementById('scrollToTop');
+
+    scrollToTop.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
     const toggleSkillsButton = document.getElementById('toggleSkillsButton');
     const skillsContent = document.getElementById('skillsContent');
 
@@ -16,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Show Projects Button
     const toggleButtonProjects = document.getElementById('toggleProjectsButton');
     const projectsContent = document.getElementById('projectsContent');
 
